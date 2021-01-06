@@ -211,7 +211,10 @@
         watch:{
             addFileModel(val){
                 if(val){
-                    this.$refs['addFileForm'].clearValidate()
+                    const addFileForm = this.$refs['addFileForm']
+					if(addFileForm){
+						addFileForm.clearValidate()
+					}
                 }
             }
         },
