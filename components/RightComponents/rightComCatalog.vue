@@ -48,6 +48,13 @@
             },
             exportProject(){
                 let {currentProjcetIndex,list} = this.$store.state.project
+                if(list.length === 0){
+					uni.showModal({
+						content:"无可导出的项目",
+						showCancel:false
+					})
+					return
+				}
                 let fileName = list[currentProjcetIndex].projectName
                 let folderList = list[currentProjcetIndex].listData
                 let customClass = this.$store.state.currentCheckAttr.customClass
