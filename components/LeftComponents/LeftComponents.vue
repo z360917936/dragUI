@@ -1,7 +1,7 @@
 <template>
     <el-row>
         <el-col :span="24">
-            <el-collapse :value="['2','3','4']">
+            <el-collapse :value="['2','3','4','5']">
                 <el-collapse-item name="1">
                     <template slot="title">
                         <view style="width: 100%;text-align: center">
@@ -10,7 +10,7 @@
                     </template>
                     <left-compoents-by-layouts :layout="layout" :clone="cloneLayout" :choose="choosLayouts"></left-compoents-by-layouts>
                 </el-collapse-item>
-                <el-collapse-item name="2" disabled>
+                <el-collapse-item name="2">
                     <template slot="title">
                         <view style="width: 100%;text-align: center">
                             普通组件
@@ -32,7 +32,7 @@
                         </ComponentContainer>
                     </draggable>
                 </el-collapse-item>
-                <el-collapse-item name="4" disabled>
+                <el-collapse-item name="3">
                     <template slot="title">
                         <view style="width: 100%;text-align: center">
                             ColorUI组件
@@ -54,7 +54,7 @@
                         </ComponentContainer>
                     </draggable>
                 </el-collapse-item>
-                <el-collapse-item name="4" disabled>
+                <el-collapse-item name="4">
                     <template slot="title">
                         <view style="width: 100%;text-align: center">
                             表单组件
@@ -76,7 +76,7 @@
                         </ComponentContainer>
                     </draggable>
                 </el-collapse-item>
-                <el-collapse-item name="3" disabled>
+                <el-collapse-item name="5">
                     <template slot="title">
                         <view style="width: 100%;text-align: center">
                             我的组件
